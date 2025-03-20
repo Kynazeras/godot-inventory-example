@@ -1,0 +1,49 @@
+[gd_scene load_steps=7 format=3 uid="uid://cx3r8j4idb4gj"]
+
+[ext_resource type="Texture2D" uid="uid://c4etoefl240fr" path="res://assets/items/green_bottle.png" id="1_0judg"]
+[ext_resource type="Script" path="res://scripts/inventory/item/inventory_item_ui.gd" id="1_qgs4m"]
+[ext_resource type="Script" path="res://scripts/inventory/item/item_state_maching.gd" id="3_vkisl"]
+[ext_resource type="Script" path="res://scripts/inventory/item/item_base_state.gd" id="4_fx6c7"]
+[ext_resource type="Script" path="res://scripts/inventory/item/item_clicked_state.gd" id="5_n2yd6"]
+[ext_resource type="Script" path="res://scripts/inventory/item/item_dragging_state.gd" id="6_1vhup"]
+
+[node name="InvetoryItemUI" type="MarginContainer"]
+offset_right = 40.0
+offset_bottom = 40.0
+pivot_offset = Vector2(20, 20)
+mouse_default_cursor_shape = 3
+script = ExtResource("1_qgs4m")
+
+[node name="Quantity" type="Label" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+theme_override_font_sizes/font_size = 8
+text = "10"
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 2
+
+[node name="ItemTexture" type="TextureRect" parent="CenterContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+texture = ExtResource("1_0judg")
+stretch_mode = 5
+
+[node name="ItemStateMachine" type="Node" parent="." node_paths=PackedStringArray("initial_state")]
+unique_name_in_owner = true
+script = ExtResource("3_vkisl")
+initial_state = NodePath("ItemBaseState")
+
+[node name="ItemBaseState" type="Node" parent="ItemStateMachine"]
+script = ExtResource("4_fx6c7")
+
+[node name="ItemClickedState" type="Node" parent="ItemStateMachine"]
+script = ExtResource("5_n2yd6")
+state = 1
+
+[node name="ItemDraggingState" type="Node" parent="ItemStateMachine"]
+script = ExtResource("6_1vhup")
+state = 2

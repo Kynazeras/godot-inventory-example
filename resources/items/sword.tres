@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://detgbdbdfudia"]
+
+[ext_resource type="Script" path="res://resources/scripts/item.gd" id="1_8hqq7"]
+[ext_resource type="Texture2D" uid="uid://dtjtsv6eapx63" path="res://assets/items/small_sword.png" id="2_4botc"]
+
+[resource]
+script = ExtResource("1_8hqq7")
+name = "Sword"
+sprite = ExtResource("2_4botc")
+stackable = false

@@ -1,0 +1,61 @@
+[gd_resource type="Resource" script_class="Inventory" load_steps=15 format=3 uid="uid://b2r2vynusp54e"]
+
+[ext_resource type="Script" path="res://resources/scripts/inventory.gd" id="1_4o077"]
+[ext_resource type="Resource" uid="uid://bxpduuw0k5fxx" path="res://resources/items/green_potion.tres" id="1_7o2uu"]
+[ext_resource type="Script" path="res://resources/scripts/inventory_item.gd" id="2_rtpol"]
+[ext_resource type="Resource" uid="uid://detgbdbdfudia" path="res://resources/items/sword.tres" id="3_rknu5"]
+
+[sub_resource type="Resource" id="Resource_ltffx"]
+script = ExtResource("2_rtpol")
+item = ExtResource("1_7o2uu")
+quantity = 77
+
+[sub_resource type="Resource" id="Resource_obmfe"]
+script = ExtResource("2_rtpol")
+item = ExtResource("1_7o2uu")
+quantity = 12
+
+[sub_resource type="Resource" id="Resource_ereeq"]
+script = ExtResource("2_rtpol")
+item = ExtResource("3_rknu5")
+quantity = 1
+
+[sub_resource type="Resource" id="Resource_15uq1"]
+script = ExtResource("2_rtpol")
+item = ExtResource("1_7o2uu")
+quantity = 70
+
+[sub_resource type="Resource" id="Resource_tvocc"]
+script = ExtResource("2_rtpol")
+item = ExtResource("3_rknu5")
+quantity = 1
+
+[sub_resource type="Resource" id="Resource_3l16a"]
+script = ExtResource("2_rtpol")
+item = ExtResource("3_rknu5")
+quantity = 1
+
+[sub_resource type="Resource" id="Resource_6apye"]
+script = ExtResource("2_rtpol")
+item = ExtResource("3_rknu5")
+quantity = 1
+
+[sub_resource type="Resource" id="Resource_1usfk"]
+script = ExtResource("2_rtpol")
+item = ExtResource("3_rknu5")
+quantity = 1
+
+[sub_resource type="Resource" id="Resource_b0u1l"]
+script = ExtResource("2_rtpol")
+item = ExtResource("3_rknu5")
+quantity = 1
+
+[sub_resource type="Resource" id="Resource_re08o"]
+script = ExtResource("2_rtpol")
+item = ExtResource("3_rknu5")
+quantity = 1
+
+[resource]
+script = ExtResource("1_4o077")
+items = Array[ExtResource("2_rtpol")]([SubResource("Resource_ltffx"), null, null, null, SubResource("Resource_obmfe"), null, null, null, SubResource("Resource_ereeq"), null, null, SubResource("Resource_15uq1"), SubResource("Resource_tvocc"), SubResource("Resource_3l16a"), SubResource("Resource_6apye"), SubResource("Resource_1usfk"), SubResource("Resource_b0u1l"), SubResource("Resource_re08o")])
+max_size = 18

@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bpdopybpjhgc0"]
+
+[ext_resource type="Script" path="res://scripts/inventory/item/inventory_item_slot.gd" id="1_2h28x"]
+
+[node name="InventoryItemSlot" type="PanelContainer"]
+custom_minimum_size = Vector2(40, 40)
+offset_right = 40.0
+offset_bottom = 40.0
+pivot_offset = Vector2(20, 20)
+mouse_filter = 1
+script = ExtResource("1_2h28x")

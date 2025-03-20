@@ -1,0 +1,35 @@
+[gd_resource type="Theme" load_steps=4 format=3 uid="uid://b1iio5nkovi4x"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n0ysg"]
+bg_color = Color(0.670588, 0.321569, 0.211765, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_86c3x"]
+bg_color = Color(0.760784, 0.764706, 0.780392, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.372549, 0.341176, 0.309804, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ar47i"]
+bg_color = Color(0.372549, 0.341176, 0.309804, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[resource]
+HoveredItemPanel/base_type = &"PanelContainer"
+HoveredItemPanel/styles/panel = SubResource("StyleBoxFlat_n0ysg")
+InventoryPanel/base_type = &"PanelContainer"
+InventoryPanel/styles/panel = SubResource("StyleBoxFlat_86c3x")
+ItemPanel/base_type = &"PanelContainer"
+ItemPanel/styles/panel = SubResource("StyleBoxFlat_ar47i")

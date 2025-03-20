@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://bxpduuw0k5fxx"]
+
+[ext_resource type="Script" path="res://resources/scripts/item.gd" id="1_ik5e6"]
+[ext_resource type="Texture2D" uid="uid://c4etoefl240fr" path="res://assets/items/green_bottle.png" id="2_k4tp0"]
+
+[resource]
+script = ExtResource("1_ik5e6")
+name = "Health Potion"
+sprite = ExtResource("2_k4tp0")
+stackable = true
+max_stack = 99
