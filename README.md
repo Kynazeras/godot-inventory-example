@@ -3,7 +3,7 @@
 This is a simple iventory management UI made in Godot with GDScript. 
 
 ## Assets Used:
-- [Tiny Dungeon](https://kenney.nl/assets/tiny-dungeon) from Kenney.nl
+[Tiny Dungeon](https://kenney.nl/assets/tiny-dungeon) from Kenney.nl
 
 
 ## Color Palette:
